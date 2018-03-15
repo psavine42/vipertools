@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBC_Pens", "AutoRoute\CS\TBC_Pens.csproj", "{274B58C1-4995-4AC8-BDD8-BFFC52EE63AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{274B58C1-4995-4AC8-BDD8-BFFC52EE63AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274B58C1-4995-4AC8-BDD8-BFFC52EE63AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274B58C1-4995-4AC8-BDD8-BFFC52EE63AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274B58C1-4995-4AC8-BDD8-BFFC52EE63AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

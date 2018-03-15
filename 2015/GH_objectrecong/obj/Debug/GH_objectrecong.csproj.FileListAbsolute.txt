@@ -1,0 +1,8 @@
+C:\Users\Psavine\Desktop\R&D LOCAL\PS_Plugins\GH_objectrecong\GH_objectrecong\bin\GH_objectrecong.dll
+C:\Users\Psavine\Desktop\R&D LOCAL\PS_Plugins\GH_objectrecong\GH_objectrecong\bin\GH_objectrecong.pdb
+C:\Users\Psavine\Desktop\R&D LOCAL\PS_Plugins\GH_objectrecong\GH_objectrecong\bin\RhinoCommon.dll
+C:\Users\Psavine\Desktop\R&D LOCAL\PS_Plugins\GH_objectrecong\GH_objectrecong\obj\Debug\GH_objectrecong.csprojResolveAssemblyReference.cache
+C:\Users\Psavine\Desktop\R&D LOCAL\PS_Plugins\GH_objectrecong\GH_objectrecong\obj\Debug\GH_objectrecong.dll
+C:\Users\Psavine\Desktop\R&D LOCAL\PS_Plugins\GH_objectrecong\GH_objectrecong\obj\Debug\GH_objectrecong.pdb
+C:\Users\Psavine\Desktop\R&D LOCAL\PS_Plugins\GH_objectrecong\GH_objectrecong\obj\Debug\Interop.Rhino5x64.dll
+C:\Users\Psavine\Desktop\R&D LOCAL\PS_Plugins\GH_objectrecong\GH_objectrecong\obj\Debug\GH_objectrecong.csproj.ResolveComReference.cache
