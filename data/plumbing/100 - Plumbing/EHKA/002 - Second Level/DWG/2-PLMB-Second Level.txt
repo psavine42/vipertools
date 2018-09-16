@@ -1,0 +1,85 @@
+Transmittal Report:
+Created by AutoCAD eTransmit Friday, January 09, 2015, 3:25 PM.
+
+Drawing:
+This is a transmittal based on 2-PLMB-Second Level.dwg.
+
+Files:
+
+Root Drawing:
+	2-PLMB-Second Level.dwg
+
+AutoCAD Drawing (External) References:
+	Structural\2-STR-53'-10_Second Floor Level.dwg
+	CAD\HWS_2nd Level Plank Pens_ehka.dwg
+	DWG\002-Second.dwg
+	2-PLMB-Sanitary Pipe-Second Level.dwg
+
+AutoCAD Font Map References:
+	acad.fmp
+
+AutoCAD Compiled Shape References:
+	Fonts\simplex.shx
+	Fonts\txt.shx
+	Fonts\romand.shx
+	Fonts\romans.shx
+	Fonts\ltypeshp.shx
+
+TrueType font file References:
+	Fonts\arial.ttf
+	Fonts\arialbd.ttf
+	Fonts\timesbd.ttf
+	Fonts\ARIALN.TTF
+
+JPEG Image References:
+	TEMPLATES\EHKA_LOGO-PIC_BW.jpg
+	Textures\Masonry.Unit Masonry.Brick.Modular.Running.jpg
+	Textures\Woods - Plastics.Finish Carpentry.Wood.White Ash.jpg
+	Textures\Woods - Plastics.Finish Carpentry.Wood.White Ash.bump.jpg
+
+AutoCAD Color-dependent Plot Style Table File References:
+	PlotCfgs\EHKA-acad.ctb
+	PlotCfgs\AIA Standard.ctb
+
+AutoCAD Plotter Configuration File References:
+	PlotCfgs\DWG To PDF.pc3
+	PlotCfgs\DWF6 ePlot.pc3
+
+The following files were excluded from the transmittal:
+	_COORDINATION\13381_Homewood_Architect's Grid.dwg
+
+The following files could not be located:
+	romans-sav.(shx,ttf)
+	PlotCfgs\acad.ctb
+	PlotCfgs\oceTDS600.ctb
+	PlotCfgs\Oce PlotWave 350 - WPD2.pc3
+
+
+Notes for distribution:
+
+.DWG external reference files:
+External reference (xref) paths may be present.  Make sure these paths work or that the root drawing is using the correct references.
+eTransmit does not include files required by xrefs unless they are also required by the root drawing.  In particular, plot style tables and overlay xrefs that are not used by the root drawing are omitted
+
+Raster image files:
+Paths may be present on references to raster images.  Make sure these paths work or that the root drawing is using the correct references.
+
+.SHX fonts:
+Please copy these fonts to the AutoCAD Fonts directory and check with the font manufacturer about distribution rights.  Fonts supplied with AutoCAD are freely distributable.
+
+.TTF fonts:
+TTF fonts must be registered with the Operating System.  To register, copy these files to the system fonts folder or use the fonts application in the Control Panel.  Check with the font manufacturer about distribution rights.  Fonts supplied with AutoCAD are freely distributable.
+
+.PC3 printer configuration files:
+Please copy these files to the AutoCAD Printer Configuration Search Path directory.
+
+.CTB/.STB plot style tables:
+Please copy these files to the AutoCAD Plot Style Table Search Path directory.
+
+Material texture files:
+Please copy these files to the AutoCAD Texture Maps Search Path directory.
+
+The AutoCAD variable FONTALT was set to:
+C:\Users\kadjorlolo.EHKA2011\appdata\roaming\autodesk\mep 2014\enu\support\simplex.shx
+Please make sure that the FONTALT variable is set to this file or an equivalent before opening any drawings.  All text styles with missing fonts are automatically set to this font.
+

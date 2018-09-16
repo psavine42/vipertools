@@ -1,0 +1,106 @@
+Transmittal Report:
+Created by AutoCAD eTransmit Wednesday, September 03, 2014, 4:05 PM.
+
+Drawing:
+This is a transmittal based on multiple drawings.
+
+Files:
+
+
+Root Drawings:	130451-00_P0-00_Legend.dwg
+	130451-00_P2-00-02_Enlarged-Units.dwg
+	130451-00_P0-01-P0-02_Schedule.dwg
+	130451-00_P0-03_Risers.dwg
+	130451-00_P0-04_Schedule.dwg
+	130451-00_P0-05-P0-06_Details.dwg
+	130451-00_P0-07-P0-08_Part Plan.dwg
+	130451-00_P1-00U_Underground.dwg
+	130451-00_P1-00X_Basement.dwg
+	130451-00_P1-01_Ground.dwg
+	130451-00_P1-02_Second.dwg
+	130451-00_P1-03_Third.dwg
+	130451-00_P1-04_Fourth.dwg
+	130451-00_P1-05_Fifth.dwg
+	130451-00_P1-06_Roof.dwg
+
+AutoCAD Drawing (External) References:
+	Xrefs\130451-00_X_TitleB.dwg
+	Xrefs\130451-00_X-UNITS.dwg
+	Xrefs\130451-00_X-FLR-01_KITCHEN.dwg
+	Xrefs\130451-00_X-FLR-01.dwg
+	Xrefs\130451-00_X-FLR-06.dwg
+	Xrefs\130451-00_X-FLR-02.dwg
+	Xrefs\130451-00_X-FLR-00.dwg
+	Xrefs\130451-00_X-FLR-05.dwg
+	Xrefs\130451-00_X-STRUCTURE.dwg
+	Xrefs\130451-00_X-FLR-03.dwg
+	Xrefs\130451-00_X-FLR-04.dwg
+
+JPEG image References:
+	Textures\Masonry.Unit Masonry.Brick.Modular.Running.jpg
+
+AutoCAD Color-dependent Plot Style Table File References:
+	PlotCfgs\RWS.ctb
+
+AutoCAD Plotter Configuration File References:
+	PlotCfgs\DWG To PDF.pc3
+	PlotCfgs\DWF6 ePlot.pc3
+
+The following files were excluded from the transmittal:
+	acad.fmp
+	Fonts\simplex.shx
+	Fonts\txt.shx
+	Fonts\arial.ttf
+	Fonts\arialbd.ttf
+	Fonts\ARIALN.TTF
+	Fonts\ARIALNB.TTF
+	Fonts\dim.shx
+	archs.(shx,ttf)
+	Fonts\romans.shx
+	My Pictures\BSCLogo.JPG
+	Drafting\Drafting-Logo copy.jpg
+	Fonts\technic_.ttf
+	Fonts\ltypeshp.shx
+	Fonts\swisseb.ttf
+	PlotCfgs\DWG To PDF.pc3
+	PlotCfgs\oceTDS600.ctb
+	Fonts\iso.shx
+	Fonts\isocp.shx
+	Fonts\swissel.ttf
+	Xrefs\130451-00_RCP-FLR-00.dwg
+	2014-04-01_GMP-PERMIT\Drawings Combined.pdf
+	Xrefs\130451-00_RCP-FLR-01.dwg
+	Xrefs\130451-00_RCP-FLR-02.dwg
+	Xrefs\130451-00_RCP-FLR-03.dwg
+	Xrefs\130451-00_RCP-FLR-04.dwg
+	Xrefs\130451-00_RCP-FLR-05.dwg
+
+The following files could not be located:
+	archs.(shx,ttf)
+	My Pictures\BSCLogo.JPG
+	Drafting\Drafting-Logo copy.jpg
+	PlotCfgs\oceTDS600.ctb
+
+
+Notes for distribution:
+
+.DWG external reference files:
+External reference (xref) paths may be present.  Make sure these paths work or that the root drawing is using the correct references.
+eTransmit does not include files required by xrefs unless they are also required by the root drawing.  In particular, plot style tables and overlay xrefs that are not used by the root drawing are omitted
+
+PDF Underlay files:
+Paths may be present on references to PDF underlay files.  Make sure these paths work or that the root drawing is u sing the correct references.
+
+.PC3 printer configuration files:
+Please copy these files to the AutoCAD Printer Configuration Search Path directory.
+
+.CTB/.STB plot style tables:
+Please copy these files to the AutoCAD Plot Style Table Search Path directory.
+
+Material texture files:
+Please copy these files to the AutoCAD Texture Maps Search Path directory.
+
+The AutoCAD variable FONTALT was set to:
+C:\Users\ken\appdata\roaming\autodesk\autocad 2014\r19.1\enu\support\simplex.shx
+Please make sure that the FONTALT variable is set to this file or an equivalent before opening any drawings.  All text styles with missing fonts are automatically set to this font.
+

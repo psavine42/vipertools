@@ -1,0 +1,14 @@
+ [DefaultDomain:     ]EXPORT STARTED: 10/21/2015 5:01:48 PM
+
+ [DefaultDomain:     ]
+	=============
+	Object Count:
+	=============
+	- AcDbMLeader       :	Total:  (2)
+	- AecbDbLabelCurve  :	Total:  (33)	Fail:  (33)
+	- AecbDbMvPart      :	Total:  (4)
+	- AecbDbPipe        :	Total:  (1429)
+	- AecbDbPipeFitting :	Total:  (1206)
+	  ** = Object classified as other IFC object.
+ [DefaultDomain:     ]EXPORT ENDED: 10/21/2015 5:16:09 PM
+

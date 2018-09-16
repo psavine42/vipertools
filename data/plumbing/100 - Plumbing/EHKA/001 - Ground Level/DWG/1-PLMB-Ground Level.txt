@@ -1,0 +1,66 @@
+Transmittal Report:
+Created by AutoCAD eTransmit Tuesday, March 31, 2015, 2:55 PM.
+
+Drawing:
+This is a transmittal based on 1-PLMB-Ground Level_3-31-15.dwg.
+
+Files:
+
+Root Drawing:
+	1-PLMB-Ground Level_3-31-15.dwg
+
+AutoCAD Drawing (External) References:
+	DWG\001-Ground_RCP.dwg
+
+JPEG image References:
+	TEMPLATES\EHKA_LOGO-PIC_BW.jpg
+	Textures\Masonry.Unit Masonry.Brick.Modular.Running.jpg
+	Textures\Woods - Plastics.Finish Carpentry.Wood.White Ash.jpg
+	Textures\Woods - Plastics.Finish Carpentry.Wood.White Ash.bump.jpg
+
+AutoCAD Color-dependent Plot Style Table File References:
+	PlotCfgs\EHKA-acad.ctb
+	PlotCfgs\AIA Standard.ctb
+
+AutoCAD Plotter Configuration File References:
+	PlotCfgs\DWG To PDF.pc3
+	PlotCfgs\DWF6 ePlot.pc3
+
+The following files were excluded from the transmittal:
+	acad.fmp
+	Fonts\simplex.shx
+	Fonts\txt.shx
+	Fonts\arial.ttf
+	Fonts\arialbd.ttf
+	Fonts\romans.shx
+	Fonts\romand.shx
+	Fonts\timesbd.ttf
+	Fonts\ltypeshp.shx
+	Fonts\ARIALN.TTF
+
+The following files could not be located:
+	romans-sav.(shx,ttf)
+
+
+Notes for distribution:
+
+.DWG external reference files:
+External reference (xref) paths may be present.  Make sure these paths work or that the root drawing is using the correct references.
+eTransmit does not include files required by xrefs unless they are also required by the root drawing.  In particular, plot style tables and overlay xrefs that are not used by the root drawing are omitted
+
+Raster image files:
+Paths may be present on references to raster images.  Make sure these paths work or that the root drawing is using the correct references.
+
+.PC3 printer configuration files:
+Please copy these files to the AutoCAD Printer Configuration Search Path directory.
+
+.CTB/.STB plot style tables:
+Please copy these files to the AutoCAD Plot Style Table Search Path directory.
+
+Material texture files:
+Please copy these files to the AutoCAD Texture Maps Search Path directory.
+
+The AutoCAD variable FONTALT was set to:
+C:\Users\Chuck Freestone\appdata\roaming\autodesk\mep 2014\enu\support\simplex.shx
+Please make sure that the FONTALT variable is set to this file or an equivalent before opening any drawings.  All text styles with missing fonts are automatically set to this font.
+
