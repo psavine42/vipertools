@@ -10,7 +10,7 @@ using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Forms;
 using System.Windows.Media.Imaging;
-
+using Newtonsoft.Json;
 using Autodesk.Revit.DB.Plumbing;
 using Autodesk.Revit.DB.Mechanical;
 using Autodesk.Revit.DB.Electrical;
@@ -128,14 +128,21 @@ namespace Viper
             #endregion
 
             #region INDEV
+  
+
             //second is visible
             PushButtonData v1 = new PushButtonData("Viper Dump", "Viper Dump", addinPath, root + "ViperGrenadeDump");
             v1.LargeImage = convertFromBitmap(Resources.viper_Viper_Classic);
             PushButton bv1 = dev.AddItem(v1) as PushButton;
 
-            PushButtonData v2 = new PushButtonData("TestPipes", "TestPipes", addinPath, root + "TestPipes");
+            PushButtonData v2 = new PushButtonData("TestPipes", "TestPipes", addinPath, root + "ViperExportHV");
             v2.LargeImage = convertFromBitmap(Resources.viper_Block_Map);
             PushButton bv2 = dev.AddItem(v2) as PushButton;
+
+            PushButtonData v3 = new PushButtonData("Viper Export", "Viper Export", addinPath, root + "ViperExportHV");
+            v3.LargeImage = convertFromBitmap(Resources.viper_Viper_Classic);
+            PushButton bv3 = dev.AddItem(v3) as PushButton;
+
             #endregion
         }
 
@@ -1323,6 +1330,81 @@ namespace Viper
                 ShowForm(sel);
             }
         }
+
+    }
+
+
+    // Export MP Data for training
+    [Transaction(TransactionMode.Manual)]
+    public class ViperExportHV : IExternalCommand
+    {
+
+        private static Autodesk.Revit.ApplicationServices.Application m_application;
+        private static UIDocument uidoc;
+        private static Document doc;
+        private ViperFormData vpdata;
+
+        public static string docu = @"
+            Generate Revit pipes from autocad Drawing lines. Requires an linked dwg, and pipe families.";
+
+        //EXECUTE FUNCTION
+        public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
+        {
+            m_application = commandData.Application.Application;
+            uidoc = commandData.Application.ActiveUIDocument;
+            doc = commandData.Application.ActiveUIDocument.Document;
+
+            FilteredElementCollector gFilter = new FilteredElementCollector(doc);
+            FilteredElementCollector finalCollector = new FilteredElementCollector(doc);
+            var categories = new List<BuiltInCategory>() {
+                BuiltInCategory.OST_PipeFitting, BuiltInCategory.OST_PipeFittingInsulation };
+            finalCollector.WherePasses
+                (new LogicalOrFilter
+                (new List<ElementFilter>{
+                new ElementClassFilter(typeof(Pipe)),
+                new ElementClassFilter(typeof(Duct)),
+                new ElementCategoryFilter(BuiltInCategory.OST_PipeFitting),
+                new ElementCategoryFilter(BuiltInCategory.OST_PipeFittingInsulation),
+                new ElementCategoryFilter(BuiltInCategory.OST_PipeInsulations),
+
+                new ElementCategoryFilter(BuiltInCategory.OST_Conduit),
+                new ElementCategoryFilter(BuiltInCategory.OST_ConduitFitting),
+
+                new ElementCategoryFilter(BuiltInCategory.OST_DuctCurves),
+                new ElementCategoryFilter(BuiltInCategory.OST_DuctFitting),
+                new ElementCategoryFilter(BuiltInCategory.OST_DuctFittingInsulation),
+                new ElementCategoryFilter(BuiltInCategory.OST_DuctCurvesInsulation)
+            }));
+            Options geoOptions = doc.Application.Create.NewGeometryOptions();
+            if (geoOptions != null)
+            {
+                // geoOptions.ComputeReferences = true;
+                // geoOptions.DetailLevel = ViewDetailLevel.Fine;
+                geoOptions.View = doc.ActiveView;
+            }
+
+            // List<Element> z = finalCollector.ToElements().ToList();
+            List<ISerialGeom> geolist = new List<ISerialGeom>();
+            // SerialRevit.FromModel(z);
+            var collector = new FilteredElementCollector(doc, doc.ActiveView.Id);
+            collector.WhereElementIsNotElementType();
+            FilteredElementIterator iter = collector.GetElementIterator();
+
+            while (iter.MoveNext())
+            {
+                Element el = iter.Current;
+                var sr = new SerialRevit(el, geoOptions);
+                geolist.Add(sr);
+            }
+
+            string path = @"C:\source\vipertools\data\dumps\test2.json";
+            string datastr = JsonConvert.SerializeObject(geolist.Select(x => x.Serialize()));
+            System.IO.File.WriteAllText(path, datastr);
+            return Result.Succeeded;
+            
+        }
+
+
 
     }
 

@@ -62,6 +62,13 @@ namespace Viper
             System.IO.File.WriteAllText(path, json);
         }
 
+        public static void DumpList(List<ISerialGeom> data,string path)
+        {
+            //open file stream
+            string datastr = JsonConvert.SerializeObject(data.Select(x => x.Serialize()));
+            System.IO.File.WriteAllText(path, datastr);
+        }
+
         public static SystemData SendPoints(List<ISerialGeom> data, List<XYZ> points)
         {
             string datastr = JsonConvert.SerializeObject(data.Select(x => x.Serialize()));
